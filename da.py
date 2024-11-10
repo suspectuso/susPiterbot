@@ -7,7 +7,7 @@ from aiogram import F
 
 from app.handlers import router
 from config import TOKEN
-from app import handlers, hand_foodmall
+from app import handlers, hand_foodmall, hand_prost
 
 
 
@@ -22,6 +22,7 @@ dp = Dispatcher()
 async def main():
     dp.include_router(handlers.router)
     dp.include_router(hand_foodmall.router)
+    dp.include_router(hand_prost.router)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
