@@ -7,6 +7,9 @@ from aiogram import F
 
 from app.handlers import router
 from config import TOKEN
+from app import handlers, hand_foodmall
+
+
 
 # Включаем логирование, чтобы не пропустить важные сообщения
 logging.basicConfig(level=logging.INFO)
@@ -17,7 +20,8 @@ dp = Dispatcher()
 
 # Запуск процесса поллинга новых апдейтов
 async def main():
-    dp.include_router(router)
+    dp.include_router(handlers.router)
+    dp.include_router(hand_foodmall.router)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
