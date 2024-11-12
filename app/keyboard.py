@@ -2,7 +2,7 @@ from aiogram.types import ReplyKeyboardMarkup, keyboard_button, KeyboardButton, 
     InlineKeyboardButton, WebAppInfo
 
 main_kb = ReplyKeyboardMarkup(keyboard=[
-    [KeyboardButton(text='фудмоллы'), KeyboardButton(text='общественные пространства'), KeyboardButton(text='аниме магазины') ],
+    [KeyboardButton(text='фудмоллы'), KeyboardButton(text='общественные пространства'), KeyboardButton(text='pinterest') ],
     [KeyboardButton(text='смотровые'), KeyboardButton(text='коворкинг')],
 
 ],          resize_keyboard=True,
@@ -22,7 +22,9 @@ prost_kb = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='севкабель порт'), KeyboardButton(text='новая голладния')],
     [KeyboardButton(text='seno'), KeyboardButton(text='бертгольд центр')],
     [KeyboardButton(text='брусницын двор'), KeyboardButton(text='этажи')],
-    [KeyboardButton(text='третье место')]
+    [KeyboardButton(text='третье место'), KeyboardButton(text='флагшток') ],
+    [KeyboardButton(text='никольские ряды'), KeyboardButton(text='лахта центр')],
+    [KeyboardButton(text='назад')]
 ],          resize_keyboard=True,
             input_field_placeholder='Выберите пункт меню.')
 
@@ -62,5 +64,46 @@ vokzal_btn = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.341381,59.922676&mode=routes&rtext=~59.907193,30.307371&rtt=mt&ruri=~ymapsbm1://org?oid%3D1058429273&z=12.79")],
 ])
 
-#############
+############# prostransvtva
+
+sevkabel_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.240923,59.924126&mode=routes&rtext=~59.924126,30.240923&rtt=mt&ruri=~ymapsbm1://org?oid%3D105313507204&z=13.9")],
+])
+
+newhol_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.243660,59.924126&mode=routes&rtext=~59.929643,30.289633&rtt=mt&ruri=~ymapsbm1://org?oid%3D199688219277&z=13.81")],
+])
+
+seno_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.260251,59.924126&mode=routes&rtext=~59.926674,30.322860&rtt=mt&ruri=~ymapsbm1://org?oid%3D183226144612&z=13.37")],
+])
+
+bertgold_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.260251,59.924126&mode=routes&rtext=~59.928048,30.312368&rtt=mt&ruri=~ymapsbm1://org?oid%3D38306660659&z=13.37")],
+])
+
+brus_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.260251,59.924126&mode=routes&rtext=~59.922677,30.249571&rtt=mt&ruri=~ymapsbm1://org?oid%3D68217909330&z=13.37")],
+])
+
+etazhi_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.277094,59.924126&mode=routes&rtext=~59.921880,30.356367&rtt=mt&ruri=~ymapsbm1://org?oid%3D10865085335&z=13.03")],
+])
+
+thirdpalace_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.277094,59.924126&mode=routes&rtext=~59.933606,30.348339&rtt=mt&ruri=~ymapsbm1://org?oid%3D211313582405&z=13.03")],
+])
+
+flag_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.212658,59.970586&mode=routes&rtext=~59.970586,30.212658&rtt=mt&ruri=~ymapsbm1://org?oid%3D12216375577&z=16")],
+])
+
+nikol_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.301493,59.921014&mode=routes&rtext=~59.921014,30.301493&rtt=mt&ruri=~ymapsbm1://org?oid%3D1436376339&z=13.9")],
+])
+
+lahta_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.281294,59.954079&mode=routes&rtext=~59.987111,30.178101&rtt=mt&ruri=~ymapsbm1://org?oid%3D71693345624&z=12")],
+])
+
 
