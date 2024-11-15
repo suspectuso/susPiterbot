@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram import F
 from aiogram import Router
-from app.keyboard import main_kb, foodmall_kb, prost_kb, pinterest_kb, museum_kb
+from app.keyboard import main_kb, foodmall_kb, prost_kb, pinterest_kb, museum_kb, kovor_kb
 
 router = Router()
 
@@ -57,3 +57,7 @@ async def without_puree(message: types.Message):
 @router.message(F.text.lower() == "музеи")
 async def without_puree(message: types.Message):
     await message.reply("Любищь делать фотографии? Великолепно! Подборка для тебя:", reply_markup=museum_kb)
+
+@router.message(F.text.lower() == "коворкинг")
+async def without_puree(message: types.Message):
+    await message.reply("Любищь делать фотографии? Великолепно! Подборка для тебя:", reply_markup=kovor_kb)

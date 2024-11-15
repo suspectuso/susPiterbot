@@ -45,6 +45,13 @@ museum_kb = ReplyKeyboardMarkup(keyboard=[
             input_field_placeholder='Выберите пункт меню.')
 
 
+kovor_kb = ReplyKeyboardMarkup(keyboard=[
+    [KeyboardButton(text='библиотека маяковского'), KeyboardButton(text='сообщество')],
+    [KeyboardButton(text='назад')]
+],          resize_keyboard=True,
+            input_field_placeholder='Выберите пункт меню.')
+
+
 ##### foodmals
 
 
@@ -136,4 +143,15 @@ sov_btn = InlineKeyboardMarkup(inline_keyboard=[
 
 hermitage_btn = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.314566,59.939864&mode=routes&rtext=~59.939864,30.314566&rtt=mt&ruri=~ymapsbm1://org?oid%3D1057721048&z=14.9")],
+])
+
+### kovor
+
+maya_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.314688,59.930413&mode=routes&rtext=~59.931911,30.343424&rtt=mt&ruri=~ymapsbm1://org?oid%3D1022452273&z=14.49")],
+])
+
+
+soo_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?indoorLevel=1&ll=30.291784,59.930413&mode=routes&rtext=~59.930556,30.291454&rtt=mt&ruri=~ymapsbm1://org?oid%3D81913438814&z=16.79")],
 ])
