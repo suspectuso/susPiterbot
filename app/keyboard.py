@@ -3,7 +3,7 @@ from aiogram.types import ReplyKeyboardMarkup, keyboard_button, KeyboardButton, 
 
 main_kb = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='фудмоллы'), KeyboardButton(text='общественные пространства'), KeyboardButton(text='pinterest') ],
-    [KeyboardButton(text='смотровые'), KeyboardButton(text='коворкинг')],
+    [KeyboardButton(text='музеи'), KeyboardButton(text='коворкинг')],
 
 ],          resize_keyboard=True,
             input_field_placeholder='Выберите пункт меню.')
@@ -31,6 +31,18 @@ prost_kb = ReplyKeyboardMarkup(keyboard=[
 main_settings = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="zoom", web_app=WebAppInfo(url="https://reservationsteps.ru/rooms/index/5d33a60d-921b-4106-a099-698a659aa196?lang=ru&scroll_to_rooms=0&disable_block_scrolls=0&insidePopup=0"))],
 ])
+
+pinterest_kb = ReplyKeyboardMarkup(keyboard=[
+    [KeyboardButton(text='анненкирхе'), KeyboardButton(text='мираж cinema')],
+    [KeyboardButton(text='назад')]
+],          resize_keyboard=True,
+            input_field_placeholder='Выберите пункт меню.')
+
+museum_kb = ReplyKeyboardMarkup(keyboard=[
+    [KeyboardButton(text='советских игровых автоматов'), KeyboardButton(text='эрмитаж')],
+    [KeyboardButton(text='назад')]
+],          resize_keyboard=True,
+            input_field_placeholder='Выберите пункт меню.')
 
 
 ##### foodmals
@@ -106,4 +118,22 @@ lahta_btn = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.281294,59.954079&mode=routes&rtext=~59.987111,30.178101&rtt=mt&ruri=~ymapsbm1://org?oid%3D71693345624&z=12")],
 ])
 
+### pinterest
 
+mirage_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.302374,59.959620&mode=routes&rtext=~59.959620,30.302374&rtt=mt&ruri=~ymapsbm1://org?oid%3D1025545600&z=14")],
+])
+
+anne_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.307051,59.959617&mode=routes&rtext=~59.944718,30.352068&rtt=mt&ruri=~ymapsbm1://org?oid%3D1494386120&z=13.84")],
+])
+
+### museum
+
+sov_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.326905,59.940084&mode=routes&rtext=~59.940084,30.326905&rtt=mt&ruri=~ymapsbm1://org?oid%3D1184371713&z=14.9")],
+])
+
+hermitage_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Построить маршут", url="https://yandex.ru/maps/2/saint-petersburg/?ll=30.314566,59.939864&mode=routes&rtext=~59.939864,30.314566&rtt=mt&ruri=~ymapsbm1://org?oid%3D1057721048&z=14.9")],
+])
